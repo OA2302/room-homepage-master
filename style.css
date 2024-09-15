@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+    width: 800px;
+    background-image: url(./images/desktop-image-hero-1.jpg)
+}
+.logo {
+    padding-top: 30px;
+    margin-left: 40px;
+}
+nav {
+    padding-top: 30px;
+}
+.top {
+    display: flex;;
+    width: 100%;
+    height: 450px;
+}
+ul {
+    display: flex;
+    gap: 23px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: rgb(218, 67, 67);
+    transition: 2s;
+}
+
+.next {
+    & .left{
+        width: 100px;
+        height: 60px;
+        background-color: black;
+        display: flex;
+        gap: 20px;
+        padding-top: 15px;
+        background-color: black;
+        padding-left: 23px;
+        padding-bottom: 20px;
+        & img{
+            &:hover {
+            background-size: cover;
+            background-color: grey;
+        }
+    }
+    }
+}
+.discover {
+    width: 330px;
+    margin-left: 130px;
+    background-color: #fff;
+    margin: 0;
+    overflow: hidden;
+    & h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    & p {
+        letter-spacing: 1.4px;
+        line-height: 20px;
+        padding-top: 20px;
+        width: 300px;
+        font-size: 16px;
+        color: rgb(153, 153, 153)
+
+    }
+    & button {
+        margin-top: 30px;
+        background: none;
+        border: none;
+        letter-spacing: 13px;
+        color: rgb(153, 153, 153)
+    }
+}
+.here {
+    padding-left: 20%;
+    padding-top: 10%;
+
+} 
+.main {
+    display: grid;
+}
+.down {
+    display: flex;
+    height: 300px;
+    & img {
+        width: 33%;
+        height: 100%;
+    }
+}
+.abt {
+    padding: 30px;
+    overflow: hidden;
+    & h2 {
+        letter-spacing: 3px;
+        font-size: x-large;
+    }
+    & p {
+        letter-spacing: 1.4px;
+        line-height: 16px;
+        padding-top: 20px;
+        width: 380px;
+        font-size: 16px;
+        color: rgb(153, 153, 153)
+    }
+}
+
+@media screen and (max-width:760px) {
+    body {
+        min-width: 286px;
+        width: 300px;
+    }
+    .top {
+        display: grid;
+    }
+    .down {
+        display: grid;
+    }
+    ul {
+        display: none;
+    }
+}
